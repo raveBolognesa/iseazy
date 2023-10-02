@@ -6,4 +6,9 @@ export const useChatStore = defineStore('chat', {
         conversation: chatList,
     }),
 
+    actions: {
+        addMessage(message) {
+            this.conversation.push(message);
+        },
+    },
 });

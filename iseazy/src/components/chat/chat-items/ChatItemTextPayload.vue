@@ -8,7 +8,7 @@
 
 import {
   ChatItem
-} from "@/components/chat-items/chatItem.types";
+} from "@/components/chat/chatItem.types";
 
 defineProps<ChatItem>()
 </script>

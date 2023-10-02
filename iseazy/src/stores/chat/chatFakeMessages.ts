@@ -1,7 +1,8 @@
-export const chatList = [
+export const chatList: any[] = [
     {
-        userName: "Mujer",
-        userAvatar: "avatar_mujer.jpg",
+        userName: "user",
+        userAvatar: "avatar_user.jpg",
+        type: "ChatItemFilePayload",
         date: new Date(),
         payload: {
             title: "Archivo 1",
@@ -12,24 +13,27 @@ export const chatList = [
         }
     },
     {
-        userName: "Mujer",
-        userAvatar: "avatar_mujer.jpg",
+        userName: "user",
+        userAvatar: "avatar_user.jpg",
+        type: "ChatItemTextPayload",
         date: new Date(),
         payload: {
             message: "Hola, ¿puedes revisar el archivo que acabo de enviarte?"
         }
     },
     {
-        userName: "Hombre",
-        userAvatar: "avatar_hombre.jpg",
+        userName: "Admin",
+        userAvatar: "avatar_Admin.jpg",
+        type: "ChatItemTextPayload",
         date: new Date(),
         payload: {
             message: "Gran trabajo Silvia. Creo que deberias revisar el punto 3."
         }
     },
     {
-        userName: "Mujer",
-        userAvatar: "avatar_mujer.jpg",
+        userName: "user",
+        userAvatar: "avatar_user.jpg",
+        type: "ChatItemFilePayload",
         date: new Date(),
         payload: {
             title: "Archivo 2",
@@ -40,16 +44,18 @@ export const chatList = [
         }
     },
     {
-        userName: "Mujer",
-        userAvatar: "avatar_mujer.jpg",
+        userName: "user",
+        userAvatar: "avatar_user.jpg",
+        type: "ChatItemTextPayload",
         date: new Date(),
         payload: {
             message: "He realizado algunas modificaciones en el archivo original. Por favor, revísalo de nuevo."
         }
     },
     {
-        userName: "Hombre",
-        userAvatar: "avatar_hombre.jpg",
+        userName: "Admin",
+        userAvatar: "avatar_Admin.jpg",
+        type: "ChatItemTextPayload",
         date: new Date(),
         payload: {
             message: "Estoy satisfecho con los cambios. ¡Gracias!"

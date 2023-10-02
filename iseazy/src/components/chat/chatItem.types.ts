@@ -1,6 +1,7 @@
 export interface ChatItem {
     userName: string
     userAvatar: string
+    type: string
     date: Date
     payload: ChatItemTextPayload | ChatItemFilePayload
 }

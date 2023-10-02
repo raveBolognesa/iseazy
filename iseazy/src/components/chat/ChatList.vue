@@ -5,7 +5,7 @@
 </template>
 <script setup lang="ts">
 import {useChatStore} from "@/stores/chat/chatStore";
-import ChatItem from "@/components/chat-items/ChatItem.vue";
+import ChatItem from "@/components/chat/chat-items/ChatItem.vue";
 import {computed} from "vue";
 
 const chatStore = useChatStore();
