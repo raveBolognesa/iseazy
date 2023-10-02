@@ -1,21 +1,19 @@
 <template>
   <div :class="['mb-5 text-gray-900 ', $props.type]" v-if="$props.type">
-    <Component :is="$props.type && $props.type.includes('File') ? ChatItemFilePayload : ChatItemTextPayload" v-bind="$props" />
+    <Component
+      :is="$props.type && $props.type.includes('File') ? ChatItemFilePayload : ChatItemTextPayload"
+      v-bind="$props"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+import { ChatItem } from '@/components/chat/chatItem.types'
 
-import {
-  ChatItem
-} from "@/components/chat/chatItem.types";
-
-import ChatItemFilePayload from "@/components/chat/chat-items/ChatItemFilePayload.vue";
-import ChatItemTextPayload from "@/components/chat/chat-items/ChatItemTextPayload.vue";
+import ChatItemFilePayload from '@/components/chat/chat-items/ChatItemFilePayload.vue'
+import ChatItemTextPayload from '@/components/chat/chat-items/ChatItemTextPayload.vue'
 
 defineProps<ChatItem>()
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
