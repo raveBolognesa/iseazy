@@ -33,7 +33,7 @@ export default {
       if (this.newMessage.trim() !== '') {
         const newChatItem: ChatItem = {
           userName: 'user',
-          userAvatar: 'avatar_user.jpg',
+          userAvatar: 'https://flowbite.com/docs/images/people/profile-picture-1.jpg',
           type: 'ChatItemTextPayload',
           date: new Date(),
           payload: {

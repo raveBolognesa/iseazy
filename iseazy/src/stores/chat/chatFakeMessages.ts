@@ -1,7 +1,7 @@
 export const chatList: any[] = [
   {
     userName: 'user',
-    userAvatar: 'avatar_user.jpg',
+    userAvatar: 'https://flowbite.com/docs/images/people/profile-picture-1.jpg',
     type: 'ChatItemFilePayload',
     date: new Date(),
     payload: {
@@ -14,7 +14,7 @@ export const chatList: any[] = [
   },
   {
     userName: 'user',
-    userAvatar: 'avatar_user.jpg',
+    userAvatar: 'https://flowbite.com/docs/images/people/profile-picture-1.jpg',
     type: 'ChatItemTextPayload',
     date: new Date(),
     payload: {
@@ -23,7 +23,7 @@ export const chatList: any[] = [
   },
   {
     userName: 'Admin',
-    userAvatar: 'avatar_Admin.jpg',
+    userAvatar: 'https://flowbite.com/docs/images/people/profile-picture-4.jpg',
     type: 'ChatItemTextPayload',
     date: new Date(),
     payload: {
@@ -32,7 +32,7 @@ export const chatList: any[] = [
   },
   {
     userName: 'user',
-    userAvatar: 'avatar_user.jpg',
+    userAvatar: 'https://flowbite.com/docs/images/people/profile-picture-1.jpg',
     type: 'ChatItemFilePayload',
     date: new Date(),
     payload: {
@@ -45,7 +45,7 @@ export const chatList: any[] = [
   },
   {
     userName: 'user',
-    userAvatar: 'avatar_user.jpg',
+    userAvatar: 'https://flowbite.com/docs/images/people/profile-picture-1.jpg',
     type: 'ChatItemTextPayload',
     date: new Date(),
     payload: {
@@ -55,7 +55,7 @@ export const chatList: any[] = [
   },
   {
     userName: 'Admin',
-    userAvatar: 'avatar_Admin.jpg',
+    userAvatar: 'https://flowbite.com/docs/images/people/profile-picture-4.jpg',
     type: 'ChatItemTextPayload',
     date: new Date(),
     payload: {

@@ -1,5 +1,5 @@
 <template>
-  <div :class="['mb-5 text-gray-900 ', $props.type]" v-if="$props.type">
+  <div :class="['mb-5 text-gray-900 ', ($props.type && $props.type.includes('File') ? 'chat-item__file' : ''), `chat-item chat-item__${$props.userName}`]" v-if="$props.type">
     <Component
       :is="$props.type && $props.type.includes('File') ? ChatItemFilePayload : ChatItemTextPayload"
       v-bind="$props"
@@ -16,4 +16,21 @@ import ChatItemTextPayload from '@/components/chat/chat-items/ChatItemTextPayloa
 defineProps<ChatItem>()
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.chat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 70%;
+  padding: 8px;
+  &__user {
+    align-items: flex-end;
+    align-self: flex-end;
+  }
+  &__file {
+    width: 100%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+}
+</style>
