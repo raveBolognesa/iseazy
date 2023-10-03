@@ -10,5 +10,16 @@
     {
       "path": "./tsconfig.vitest.json"
     }
-  ]
+  ],
+
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "./dist",
+    "target": "es6",
+    "lib": ["es6"]
+  },
+  "include": [
+    "./features/step_definitions/**/*",
+    "./features/support/**/*",
+    "./**/*"]
 }

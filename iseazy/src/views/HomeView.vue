@@ -26,7 +26,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="w-full max-w-2xl max-h-full">
+  <main class="w-full max-w-2xl max-h-full align-items-center">
+    <h1 class="pb-20 text-lg font-semibold align-text-center">Vite App</h1>
     <button
       id="chat-button"
       type="button"
