@@ -1,5 +1,12 @@
 # iseazy
 
+Main point focusses in this project 
+- unit tests (yarn test:unit)
+- e2e tests only with playwright (yarn test:e2e)
+- BDD e2e tests to be more comprenhensive when running a test (yarn test:bdd)
+
+
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
